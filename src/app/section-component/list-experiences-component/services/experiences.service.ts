@@ -12,7 +12,7 @@ export class ExperiencesService {
     this.experience = [
       {
         company: 'La Cornucopia',
-        description: 'Mantenimiento y desarrollo de sistemas informáticos aplicando buenas prácticas de programación, administración de base de datos SQL y No SQL, administración de servidores.',
+        description: 'Mantenimiento y desarrollo de sistemas informáticos aplicando buenas prácticas de programación, administración de base de datos SQL y No SQL, administración de servidores. Actualmente como consultor interino.',
         init_date: '2025-01-01',
         end_date: null,
         actual: true
