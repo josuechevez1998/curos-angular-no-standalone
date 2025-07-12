@@ -1,12 +1,16 @@
-<section class="space-y-6 w-full">
-  <div class="flex items-center space-x-4 p-4 border border-indigo-200 rounded-md hover:shadow-md transition-shadow duration-200">
-    <img src="ruta-icono-js.svg" alt="JavaScript" class="w-8 h-8" />
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-10 w-full">
+  <div
+    *ngFor="let tech of technologies"
+    class="flex items-start space-x-4 p-4 border border-indigo-200 rounded-md hover:shadow-md transition-shadow duration-200"
+  >
+    <img
+      [src]="getLogo(tech.name)"
+      [alt]="tech.name"
+      class="w-10 h-10 mt-1"
+    />
     <div>
-      <h4 class="text-lg font-semibold text-indigo-700">JavaScript</h4>
-      <p class="text-base text-gray-700">
-        Lenguaje de programación dinámico, usado principalmente para desarrollo web frontend y backend.
-      </p>
+      <h4 class="text-lg font-semibold text-indigo-700">{{ tech.name }}</h4>
+      <p class="text-sm text-gray-700">{{ getDescription(tech.name) }}</p>
     </div>
   </div>
-  <!-- Repetir para más tecnologías -->
 </section>
